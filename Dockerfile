@@ -5,7 +5,8 @@ FROM python:3.9-slim-buster
 COPY . .
 
 # Install dependencies
-RUN pip install --no-cache-dir fastapi uvicorn[standard] gunicorn qrcode[pil]
+# RUN pip install --no-cache-dir fastapi uvicorn[standard] gunicorn qrcode[pil]
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Make port 80 available to the world outside this container
 EXPOSE 8000
