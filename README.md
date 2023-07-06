@@ -10,3 +10,10 @@ uvicorn qr-generator:app --reload
 ```
 
 - Ensure [public](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/restricting-the-visibility-of-forwarded-ports#overview) port forwarding in codespace.
+
+## Running the Dockerfile
+
+```bash
+$ docker build -t my-fastapi-app .
+$ docker run -p 80:80 my-fastapi-app
+```
