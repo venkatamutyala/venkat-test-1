@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.12-rc-alpine
+FROM python:3.11.4-bullseye
 
 # Copy the files into the Docker image
 COPY . .
