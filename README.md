@@ -15,13 +15,13 @@ uvicorn qr-generator:app --reload
 ## Running the Dockerfile
 
 ```bash
-$ docker build -t my-fastapi-app .
-$ docker run -p 80:80 my-fastapi-app
+$ docker build -t qr-bot-generator .
+$ docker run -p 8000:8000 qr-bot-generator
 ```
 
 ## Access the website
 
-- In your browser, navigate to ```https://mbaoma-ominous-yodel-7pj9wxg69jx2w6j5-8000.preview.app.github.dev/v1/qr?url=<your-url>```
+- In your browser, navigate to ```https://127.0.0.1:8000.preview.app.github.dev/v1/qr?url=<your-url>```
 
 A QR code will be generated
 <img width="931" alt="image" src="https://github.com/GlueOps/github-actions-build-push-containers/assets/49791498/d66f773c-e05c-43db-b978-0bebbb303bb2">
