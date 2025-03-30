@@ -21,6 +21,9 @@ $ docker run -p 8000:8000 qr-bot-generator
 
 ## Access the website
 
+
+
+
 - In your browser, navigate to ```https://127.0.0.1:8000.preview.app.github.dev/v1/qr?url=<your-url>``` - localhost, ```https://qr-code-generator.<development-captain-domain>/v1/qr?url=<your-url>``` - Kubernetes deployment
 
 A QR code will be generated
